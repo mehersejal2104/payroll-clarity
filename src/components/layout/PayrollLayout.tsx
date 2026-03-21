@@ -5,6 +5,7 @@ import AppHeader from "./AppHeader";
 import { useState } from "react";
 
 const pageTitles: Record<string, string> = {
+  "/payroll/dashboard": "Payroll Dashboard",
   "/payroll/run": "Run Payroll",
   "/payroll/payslip": "Payslip",
   "/payroll/ctc-template": "CTC Template",
@@ -17,10 +18,8 @@ const PayrollLayout = () => {
 
   return (
     <div className="flex min-h-screen w-full bg-background">
-      {/* Desktop sidebar */}
       <PayrollSidebar />
 
-      {/* Mobile drawer overlay */}
       {drawerOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div className="absolute inset-0 bg-foreground/20 backdrop-blur-sm" onClick={() => setDrawerOpen(false)} />

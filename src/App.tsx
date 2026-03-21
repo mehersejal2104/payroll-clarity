@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import PayrollLayout from "@/components/layout/PayrollLayout";
+import PayrollDashboard from "@/pages/payroll/PayrollDashboard";
 import RunPayroll from "@/pages/payroll/RunPayroll";
 import Payslip from "@/pages/payroll/Payslip";
 import CTCTemplate from "@/pages/payroll/CTCTemplate";
@@ -23,7 +24,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/payroll" element={<PayrollLayout />}>
-              <Route index element={<Navigate to="run" replace />} />
+              <Route index element={<Navigate to="dashboard" replace />} />
+              <Route path="dashboard" element={<PayrollDashboard />} />
               <Route path="run" element={<RunPayroll />} />
               <Route path="payslip" element={<Payslip />} />
               <Route path="ctc-template" element={<CTCTemplate />} />
