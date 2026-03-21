@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const items = [
-  { label: "Home", icon: Home, path: "/payroll/run" },
-  { label: "Explore", icon: Compass, path: "/payroll/payslip" },
+  { label: "Home", icon: Home, path: "/payroll/dashboard" },
+  { label: "Explore", icon: Compass, path: "/payroll/run" },
   { label: "Profile", icon: User, path: "/payroll/ctc-template" },
 ];
 

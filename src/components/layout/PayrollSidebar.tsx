@@ -1,9 +1,10 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { Play, FileText, LayoutTemplate, ChevronDown, DollarSign, X } from "lucide-react";
+import { Play, FileText, LayoutTemplate, ChevronDown, DollarSign, X, LayoutDashboard } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
 const payrollItems = [
+  { title: "Dashboard", path: "/payroll/dashboard", icon: LayoutDashboard },
   { title: "Run Payroll", path: "/payroll/run", icon: Play },
   { title: "Payslip", path: "/payroll/payslip", icon: FileText },
   { title: "CTC Template", path: "/payroll/ctc-template", icon: LayoutTemplate },
@@ -59,7 +60,7 @@ const PayrollSidebar = ({ mobile, onClose }: PayrollSidebarProps) => {
         <div
           className={cn(
             "overflow-hidden transition-all duration-200",
-            payrollOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
+            payrollOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
           )}
         >
           <div className="ml-4 mt-1 space-y-0.5 border-l pl-3">
