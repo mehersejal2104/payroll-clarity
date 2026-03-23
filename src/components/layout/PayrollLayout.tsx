@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import PayrollSidebar from "./PayrollSidebar";
+import HrmsSidebar from "./HrmsSidebar";
 import MobileBottomNav from "./MobileBottomNav";
 import AppHeader from "./AppHeader";
 import { useState } from "react";
@@ -18,13 +18,16 @@ const PayrollLayout = () => {
 
   return (
     <div className="flex min-h-screen w-full bg-background">
-      <PayrollSidebar />
+      <HrmsSidebar />
 
       {drawerOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
-          <div className="absolute inset-0 bg-foreground/20 backdrop-blur-sm" onClick={() => setDrawerOpen(false)} />
+          <div
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+            onClick={() => setDrawerOpen(false)}
+          />
           <div className="absolute left-0 top-0 h-full animate-slide-in-left">
-            <PayrollSidebar mobile onClose={() => setDrawerOpen(false)} />
+            <HrmsSidebar mobile onClose={() => setDrawerOpen(false)} />
           </div>
         </div>
       )}
