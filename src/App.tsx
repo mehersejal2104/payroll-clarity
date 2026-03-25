@@ -30,6 +30,7 @@ const App = () => (
               <Route path="run" element={<RunPayroll />} />
               <Route path="payslip" element={<Payslip />} />
               <Route path="ctc-template" element={<CTCTemplate />} />
+              <Route path="reports" element={<Reports />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -9,6 +9,7 @@ const pageTitles: Record<string, string> = {
   "/payroll/run": "Run Payroll",
   "/payroll/payslip": "Payslip",
   "/payroll/ctc-template": "CTC Template",
+  "/payroll/reports": "Reports",
 };
 
 const PayrollLayout = () => {

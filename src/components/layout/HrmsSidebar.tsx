@@ -56,6 +56,7 @@ const menuItems: MenuItem[] = [
       { title: "Run Payroll", path: "/payroll/run", icon: Play },
       { title: "Payslip", path: "/payroll/payslip", icon: FileTextAlt },
       { title: "CTC Template", path: "/payroll/ctc-template", icon: LayoutTemplate },
+      { title: "Reports", path: "/payroll/reports", icon: BarChart3 },
     ],
   },
   { title: "Communication", path: "/communication", icon: MessageSquare },
