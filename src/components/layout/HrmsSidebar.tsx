@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import {
   LayoutDashboard, Building2, Users, UserPlus, Shirt, UserMinus, FileText,
   FolderOpen, Clock, ClipboardCheck, ShieldCheck, Calendar, CalendarDays,
-  Palmtree, DollarSign, Play, FileText as FileTextAlt, CreditCard, LayoutTemplate,
+  Palmtree, DollarSign, Play, FileText as FileTextAlt, CreditCard, LayoutTemplate, BarChart3,
   MessageSquare, Settings, Building, UserCog, Workflow, CalendarCog,
   ChevronLeft, ChevronRight, ChevronDown, LogOut, Bell,
 } from "lucide-react";
