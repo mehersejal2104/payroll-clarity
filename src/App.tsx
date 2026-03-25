@@ -9,6 +9,7 @@ import PayrollDashboard from "@/pages/payroll/PayrollDashboard";
 import RunPayroll from "@/pages/payroll/RunPayroll";
 import Payslip from "@/pages/payroll/Payslip";
 import CTCTemplate from "@/pages/payroll/CTCTemplate";
+import Reports from "@/pages/payroll/Reports";
 import Index from "@/pages/Index";
 import NotFound from "@/pages/NotFound";
 
