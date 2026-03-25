@@ -9,6 +9,7 @@ import PayrollDashboard from "@/pages/payroll/PayrollDashboard";
 import RunPayroll from "@/pages/payroll/RunPayroll";
 import Payslip from "@/pages/payroll/Payslip";
 import CTCTemplate from "@/pages/payroll/CTCTemplate";
+import Reports from "@/pages/payroll/Reports";
 import Index from "@/pages/Index";
 import NotFound from "@/pages/NotFound";
 
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="run" element={<RunPayroll />} />
               <Route path="payslip" element={<Payslip />} />
               <Route path="ctc-template" element={<CTCTemplate />} />
+              <Route path="reports" element={<Reports />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
